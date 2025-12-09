@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    const a = Number(prompt('월을 입력해주세요.' ,''))
+    if(a){
+        let season ="";
+
+        if (a >= 3 && a <= 5){
+            season ="봄"
+        }else if (a>= 6 && a<=8){
+            season = "여름";
+        }else if (a >= 9 &&  a<= 11){
+            season = "가을"
+        }else if (a === 12 || a === 1 || a === 2 ){
+            season = "겨울";
+        }else {
+            season = "잘못된 입력 입니다"
+        }
+        document.write(`${a}월은 <strong>${season}</strong>입니다`)
+    }    
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

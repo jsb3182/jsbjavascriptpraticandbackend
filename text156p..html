@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const rawInput = prompt('태어난 해를 입력해주세요', '')
+        const year = Number(rawInput)
+        //천간(10) 배열
+        const ganArr = ["갑", "을", "병", "정", "무", "기", "경", "신", "임", "계"];
+         // 지지(12) 배열
+        const jiArr = ["자", "축", "인", "묘", "진", "사", "오", "미", "신", "유", "술", "해"];
+        // year % 10 → 천간
+        const gan = ganArr[year % 10];
+
+        // year % 12 → 지지
+        const ji = jiArr[year % 12];
+
+        document.write(`${year}년은 <strong>${gan}${ji}년</strong> 입니다.`);
+    </script>
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

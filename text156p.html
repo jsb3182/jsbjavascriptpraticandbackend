@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        const rawInput = prompt('태어난 해를 입력해주세요.', '')
+        const year = Number(rawInput)
+        const jiNum = year % 12 //지지
+        const gaNum = year % 10 //천간
+        // 간 띠 
+        let gan, din
+        if (jiNum === 0) { gan = "자" }
+        else if (jiNum === 1) { gan = "축" }
+        else if (jiNum === 2) { gan = "인" }
+        else if (jiNum === 3) { gan = "묘" }
+        else if (jiNum === 4) { gan = "진" }
+        else if (jiNum === 5) { gan = "사" }
+        else if (jiNum === 6) { gan = "오" }
+        else if (jiNum === 7) { gan = "미" }
+        else if (jiNum === 8) { gan = "신" }
+        else if (jiNum === 9) { gan = "유" }
+        else if (jiNum === 10) { gan = "슬" }
+        else if(jiNum === 11) { gan = "해"}
+
+         if (gaNum === 0) { din = "갑" }
+        else if (gaNum === 1) { din = "을" }
+        else if (gaNum === 2) { din = "병" }
+        else if (gaNum === 3) { din = "정" }
+        else if (gaNum === 4) { din = "무" }
+        else if (gaNum === 5) { din = "기" }
+        else if (gaNum === 6) { din = "경" }
+        else if (gaNum === 7) { din = "신" }
+        else if (gaNum === 8) { din = "임" }
+        else if (gaNum === 9) { din = "계" }
+        document.write(`${year}년은${din}${gan}입니다`)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
