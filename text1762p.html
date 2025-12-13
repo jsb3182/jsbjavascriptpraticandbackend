@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const object = {
+            name: "성범",
+            age: 25,
+            major: "GIS"
+        };
+        for(const key in object){
+            if(object.hasOwnProperty(key)){
+                const element = object[key]
+                console.log(`${key} : ${element}`);
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

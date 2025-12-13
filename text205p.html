@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function min(array){
+            let output =array[0]
+            for (const item of array){
+                if(output > item) {
+                    output = item //0utput 값에 할당 해서 변경하기 
+                }
+            }
+            return output
+        }
+        const testArray = [52, 273, 32, 103, 275,24, 57]
+        console.log(`${testArray}중에서`)
+        console.log(`최솟갑 = ${min(testArray)}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

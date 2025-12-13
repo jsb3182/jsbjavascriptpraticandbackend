@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sample() { //가변함수 argument 배열 같지만 배열은 아닙니다
+            console.log(arguments)
+            for(let i =0; i < arguments.length; i++){
+                console.log(`${i}번쨰 요소: ${argument[i]}`)
+            }
+        }
+        sample(1,2)
+        sample(1,2,3)
+        sample(1,2,3,4)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
