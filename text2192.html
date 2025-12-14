@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const max = (...args) => { // 배열로 변환됨
+            let array
+            // 리스트 형태로 받기 
+            if(args.length === 1 && Array.isArray(args[0])){
+                array = args[0]
+            }
+            // 각 요소로 받기
+            else {
+                array = args
+            }
+            //방어 코드 
+            if (array.length === 0) return undefined
+
+            let output = array[0]
+            for (const item of array) {
+                if (item > output) {
+                    output = item
+                }
+            }
+        return output
+        }
+        console.log(max(1,2,3,4))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

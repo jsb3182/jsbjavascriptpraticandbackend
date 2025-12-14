@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const max =(...array) =>{
+            //최댓 값을 찾는 함수(전개 ) 
+            let output = array[0]
+           for (const item of array){
+            if(item > output){
+                output = item
+            }
+           }
+            return output
+        }
+    
+        console.log(max[1,2,3,4])
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

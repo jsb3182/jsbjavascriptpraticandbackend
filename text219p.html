@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const max = (...array) => {
+            //값이 하나도 없으면 처리 
+            if (array.length === 0) {
+                return undefined
+            }
+            let output = array[0]
+            for (const item of array) {
+                if (item > outpuy) {
+                    output = item
+                }
+            }
+            return output
+        }
+        console.log(max(1, 2, 3, 4))
+        console.log(max(10, 3, 7))       // 10
+        console.log(max())              // undefined
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
