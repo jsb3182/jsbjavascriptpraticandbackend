@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let pi = 3.14
+        console.log(`파이 값은 ${pi}입니다.`)
+        //불록을 사용한 스코프 생성
+        //다음불럭에 속하는 변수 이기 때문에 충돌이나지 않기때문에 충돌이안일나남
+        {
+            let pi = 3.14592
+            console.log(`파이 값은 ${pi}입니다.`)
+            // 함수 불록을 사용한 스코프 생성하기 
+        }
+        console.log(`파이 값은 ${pi}입니다`)
+        // 함수불록을 사용한 스코드 생성
+        //불록다른경우 이제 내부변수가 외부 변수를 가리는 현상을 "새도잉"
+        function sample(){
+            let pi = 3.14592
+            console.log(`파이 값은 ${pi}입니다.`)
+        }
+        sample()
+        console.log(`파이 값은${pi}입니다.`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
