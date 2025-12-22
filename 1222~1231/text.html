@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //기본 자료형의 일시적 승급
+        // 원래 기본 자료형은 속성과 메소드를 가질수 없다 그런데 어떨게 ?
+        // 일시 승\급 쓸려면
+        const h = '안녕' // unfind
+        h.sample = 10 
+        Number.prototype.power = function (n = 2) {
+            return this.valueOf() ** n
+        }
+        //NUMBER 객체의 POWER 메소드를 사용합니다.
+        const a = 12
+        cosole.log('a.power():',power())
+        console.log('a.power(3):',a.power(3))
+        console.log('a.power(4):', a.power(4))
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //요소 배열내부에 있는 값,속성 객체 내부에 있는 값을 의미합니다.
+        // 메소드는 속성중에서 함수 자료형인 것을 의미합니다 
+        //this 키워드는 내부의 메소드에서 객체 자신을 나타내는 키위드 입니다.
+        const object = {
+            ko: '빵',
+            en: 'bread',
+            ja: 'パン',
+            fr: 'pain',
+            es: 'pan',
+            lang: {
+                ko: '한국어',
+                en: '영어',
+                ja: '일본어',
+                fr: '프랑스어',
+                es: '스페인어'
+            },
+            print: function(lang) { //메소드를 호출을안함 
+                  console.log(`${this.ko}는 ${this.lang[lang]}로 ${this[lang]}입니다.`)
+                console.log(`${this.ko}는 ${this.lang[lang]}로 ${this[lang]}입니다.`)
+            }
+
+        }
+        object.print('en')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
