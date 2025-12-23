@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const num = 52000
+        num.원 = function() { //원시 값 속성을 가질수가 없다 임시 박싱으로 객체가 임시로된거지 객체는 아님
+            //TypeError: num.원 is not a function
+            //실향값
+            return this.valueOf() +'원'
+        }
+        console.log(num.원())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

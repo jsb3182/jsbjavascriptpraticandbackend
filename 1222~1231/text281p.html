@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+        //자바스크립트 파릴을 불러옴 cdn 이란> 콘텐츠 네트워크라는 의미입니다 이제 데이터를 창고처럼 데이터를 전송 해준다면 좀 더 빨리 해결가능 
+        //자바스크립트에서 min 이란? 코드를 "집핑 한것입니다."
+        //데이터를 생성 합니다.
+        const books = [{
+            name: '혼자 공부하는 파이썬',
+            price: 18000,
+            publisher: "한빛미디어"
+        }, {
+            name: '혼자 공부하는 자바 스크립트',
+            price: 10200,
+            publisher: '한빛미디어'
+        },{
+            name: '혼자 공부하는 자바스크립트',
+            price: 10000,
+            publisher: '한빛미디어'
+        }]
+        //가격으로 정렬한후 출력합니다
+        const output = _.sortBy(books, (book) => book.price)
+        console.log(JSON.stringfy(output,null, 2))
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

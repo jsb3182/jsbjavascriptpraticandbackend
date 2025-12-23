@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //변수를 선언합니다.
+        const degree = 90
+        //math sin은 도를 라디안으로 변환 해야합니다.
+        //변환 공식 라디안으로 변환해야합니다.
+        const radian = degree * (Math.PI/ 180);
+        //변환된 라디안을 sin에 넣음
+        const result = Math.sin(random);
+        //출력합니다.
+        document.write("sin 원래 계산값:", result);
+        //근데이제 컴푸ㅠ터는 2진수로 저장하기 때문에
+        //1이 딱 떨어지지지 않고 0.9999999 처럼 나올수 있다 그래서 반올림해서 씀 
+        console.log("toFixed(2)로 보기 좋게 ", result.toFixed(2));
+        //숫자를 반올림 (정수로 만들기)
+        console.log("Mathround 로 반올림:", Math.round(result));
+        //소수점 n자리 반올림해서 숫자유지 
+        const rounded6 = Math.round(result * 1_000_000) / 1_000_000;
+        console.log("소수점 6저라 반올림(숫자 우지):", rounded6)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
