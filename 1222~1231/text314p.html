@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 문서객체.textContent 입력된 문자열을 그대로 넣습니다.
+        // 문서객체.innerHTML 입력된 문자열을 html형식으로 넣습니다.
+        document.addEventListener('DOMContentLoaded',()=> {
+            const a = document.querySelector('#a')
+            const b = document.querySelector('#b')
+            a.textConten = '<h1>textContent<h1>'//그대로 들어감
+            b.innerHTML = '<h1>innerHTML<h1>' // <h1>요소로 변환해서 들어감
+        })
+    </script>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div></div>
+</body>
+</html>
