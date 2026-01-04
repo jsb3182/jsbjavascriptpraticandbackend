@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let counter = 0
+            let isConnect = false
+
+            const h1 = document.quertSelector('h1')
+            const p = document.querySelector('p')
+            const connectButton = document.querySelector('#connect')
+            const disconnectButton = document.querySelector('#disconnect')
+            const listener = (event) => {
+                h1.textContent = `클릭 횟수: ${counter++}`
+            }
+            connectButton.addEventListener('click', () => {
+                if(isConnect === false) {
+                    h1.addEventListener('click', listener)
+                    p.textContent = '이벤트 연결 상태: 연결'
+                    isConnect = true
+                }
+            })
+            disconnectButton.addEventListener('click', () => {
+                if(isConnect === true) {
+                    h1.removeEventListener('click', listener)
+                    p.textContent = '이벤트 연결 : 해제'
+                }
+            })
+
+
+        })
+        //스크립트 핵심 포인트 dom 이벤트 html페이에 객체 요소를 웹 브라우저 읽어들였울땨 이벤트입니다
+        //queryselect메소드 문서 객체를 조선택할떄 사용하느 메소드이야
+        //textContent 속성과 innerHtml 속성은 객ㄱ채 냐부의 글자를 조작할떄 사용하는 속성
+    </script>
+    <style>
+        h1 {
+            /*클릭을 여러번 했을때, 글자
+            선택 되는 것을 막기 위한 스타일*/
+            user-select:  none;
+        }
+    </style>
+    <body>
+        <h1>클릭횟수</h1>
+        <button id="connect">이벤트 연결</button>
+        <button id ="discinnect">이벤트 제거</button>
+        <p>이벤트 연결 상태 해제</p>
+    </body>
+</head>
+<body>
+    
+</body>
+</html>
