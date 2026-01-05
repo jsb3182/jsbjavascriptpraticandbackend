@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //변수를 선언합니다
+        const date = new Date()
+        const hour = date.getHopurs()
+        //조건문
+        switch(true){
+            //표현식 hour < 11이 참일떄 실행합니다.
+            case hour < 11:
+                alert('아침 먹을 시간입니다.')
+                break
+            case hour < 15:
+                alert('점심먹을 시간입니다,')
+                break    
+            default:
+                //위의 모든것이 거짓일때 실행 합니다
+                alert('저녁 먹을 시간입니다.')
+                break
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
