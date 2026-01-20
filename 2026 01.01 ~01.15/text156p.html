@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const yearInput = prompt('태어난 핼, 입력하세요', '')
+        const year = Number(yearInput)
+        const ground = ['자', '축', '인', '묘', '진', '사', '오', '미', '신', '유', '술', '해']
+        const animal = ['쥐', '소', '호랑이', '토끼', '용', '뱀', '말', '양', '원숭이', '닭', '개', '돼지']
+        const sky = ['갑', '을', '병', '정', '무', '기', '경', '신', '임', '계']
+        const baseYear = 1984
+        const gap = year - baseYear
+        const skyIndex = (gap % 10) % 10
+        const goroundIndex = (gap % 12) % 12
+        alert(
+            `입력 연도 : ${year}년\n`+
+            `천간 : ${sky[skyIndex]}\n`+
+            `지지 : ${ground[goroundIndex]}\n`+
+            `별자리 : ${animal[goroundIndex]}`
+        )
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
