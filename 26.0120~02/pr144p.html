@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 버튼 나타내기</title>
+</head>
+<body>
+    <fieldset>
+        <label>아이디:<input type="text" id="user_id" size="10"></label>
+        <label>비밀번호:<input type="password" id="user_password" size="15"> </label>
+    </fieldset>
+    <form>
+        <input type="button" value="공지창 열기" oneclick="window.open('notice.html')">
+        </input>
+        <input type="file"><!--파일첨부버튼-->
+        <input type="hidden" value="사이트를 통한 직접 로그인">
+        <label>아이디:<input type="text" id="user_id" size="10"></label>
+        <label>비밀번호<input type="password" id="user_pw" size="10"></label>
+        <input type="submit" value="로그인">
+    </form>
+</body>
+</html>

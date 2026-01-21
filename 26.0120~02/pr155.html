@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ㅏㅐ">
+<head>
+    <meta charset="UTF-8">
+    <title>레드향 주문하기</title>
+</head>
+<body>
+    <div id="container">
+        <h1>레드향 주문하기</h1>
+        <form>
+            <fildset>
+                <legend>배송정보</legend>
+                <ul id="shipping">
+                    <li>
+                        <label for="user-name">이름</label>
+                        <input type="text" id="user-name">
+                    </li>
+                    <li>
+                        <label for="addr">배송 주소</label>
+                        <input type="text" id="mail">
+                    </li>
+                    <li>
+                        <label for="mail">이메일</label>
+                        <input type="text" id="addr">
+                    </li>
+                    <li>
+                        <label for ="phone">연락처</label>
+                        <input type="tel" id="phone">
+                    </li>
+                    <li>
+                        <label for="d-day">배송 지정</label>
+                        <input type="date" id="d-day"><small>주문일로부터 최소 3일 이후</small>
+                    </li>
+                    <!--여러줄을 입력하느 택스트-->
+                    <label for="memo">메모</label>
+                    <textarea id="memo" cols="40" rows="4"></textarea>
+                </ul>
+                <label for="prod1">상품 선택</label>
+                <select id="prod1">
+                    <option value="special_3" selected>선물용 3kg</option>
+                    <option value="special_5">선물 5kg</option>
+                    <option value="family_3">가정용 3kg</option>
+                    <option value="family_5">가정용 5kg</option>
+                </select>
+                <label for="prod2">포장 여부</label>
+                <input type="text" id="prod2" list="pack">
+                <datalist id = "pack">
+                    <option value="package">선물 포장</option>
+                    <option value="no_package">포장 안 함</option>
+            </fildset>
+            <button type="submit">주문하기</button>
+            <button type="reset">취소하기</button></button>
+            <li>
+                <label for="path">가입경로</label>
+                <select id="path">
+                    <option value="blog">불로그</option>
+                    <option value="search">검색</option>
+                    <option value="sns">SNS</option>
+                    <option value="etc">기타</option>
+            </li>
+            <li>
+                <label for="memo">메모</label>
+                <textarea cols="40" rows="4" placeholder="남기신 말씀이 있으면 여기에"></textarea>
+            </li>
+        </form>
+    </div>
+</body>
+</html>

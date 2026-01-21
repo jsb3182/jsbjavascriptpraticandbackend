@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>연습문제 2 164p</title>
+    <style>
+        #container {
+            width: 520px;
+            border: 1px soli black;
+            padding: 20px 40px;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>GIS 웹 개발자</h1>
+        <p>html css 자바스크립트의 기술을 이해하고 실무 경험이있는분을 찾습니다</p>
+        <hr><!--줄선 태그-->
+        <form><!--전송해야되는 태그-->
+            <h2>개인정보</h2>
+            <ul>
+                <li>
+                    <label for="sname">이름</label><!--라벨 앞에 있는 거 -->
+                    <input type="text" id="sname" autofocus placeholder="공백없이 입력하세요">
+                </li>
+                <li>
+                    <label for="snumber">연락처</label>
+                    <input type="tel" id="snumber" autofocus placeholder="연락처를 입력해주세요">
+                </li>
+            </ul>
+            <h4>지원 분야</h4>
+            <ul>
+                <li>
+                    <label><input type="radio" name="field" value="an">웹 퍼블리싱</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="field" value="pd">웹에플리케이션 개발</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="fidld" value="eng">개발환경 개선</label>
+                </li>
+            </ul>
+            <h4>지원동기</h4>
+            <textarea id="motive" cols="60" row="5" placeholder="지원동기 써주셈"></textarea>
+            <div>
+                <input type="submit" value="접수하기">
+                <input type="rest" value="다시 쓰기">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
