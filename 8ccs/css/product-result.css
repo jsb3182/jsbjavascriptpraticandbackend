@@ -1,0 +1,25 @@
+table, th, tc {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+td,th {
+    padding:10px 20px;
+}
+#containner{
+    width:600px; /*컨테이너의 너비*/
+    border:none;/*태두리 없앰*/
+    margin:0 auto;/*화면중앙에 배치함*/
+}
+div {
+    border:1px dotted #222; /*태두리*/
+    padding:20px;/*패딩*/
+    margin:20px; /*마진*/
+}
+#description{
+    border-top-left-radius: 30px;/*왼쪽 위 모서리 라운딩*/
+    border-top-right-radius:30px;/*오른쪽 위 모서리 라운딩*/
+}
+#pakage{
+    border-bottom-left-radius:30px;/*왼쪽 아래 모서리*/
+    border-bottom-right-radius:30px;/*오른쪽 아래 모서리*/
+}
