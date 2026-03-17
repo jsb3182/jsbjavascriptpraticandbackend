@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function getZodiac(year) {
+            // 1. 십간 (갑을병정무기경신임계) - 10년 주기
+            // 서기 4년이 '갑'이므로 이를 기준으로 계산
+            const gan = ["경", "신", "임", "계", "갑", "을", "병", "정", "무", "기"];
+            //2.십이지 -자축인묘진사오미 12년주기
+            const ji = ["신", "유", "술", "해", "자", "축", "인", "묘", "진", "사", "오", "미"];
+            // 동물이름메칭
+            const animals = {
+                "자": "쥐", "축": "소", "인": "호랑이", "묘": "토끼",
+                "진": "용", "사": "뱀", "오": "말", "미": "양",
+                "신": "원숭이", "유": "닭", "술": "개", "해": "돼지"
+            };
+            if (isNaN(year) || year <= 0) {
+                return "울바른 연도를 입력해주세요";
+            }
+            const myGan = gan[year % 10];
+            const myJi = ji[year % 12];
+            const myAnimal = animals[myJi];
+            return {
+                fullNames: `${myGan}${myJi}년`,
+                animal: myAnimal
+            };
+        }
+        //사용자 입력 받기 (부라우저 환경 기준
+        const inputYear = prompt("태어난 연도를 입력히세요");
+        const result = getZodiac(paresInt(inputYear));
+        if (typeof result === "string") {
+            consoel.log(result);
+        } else {
+            console.log(`입력하신 ${inputYear}년은 '${result.fullNames}'이며, '${result.animal}띠'입니다.`);
+            alert(`입력하신 ${inputYear}년은 ${result.fullNames} (${result.animal}띠) 입니다.`);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
